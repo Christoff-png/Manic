@@ -1,4 +1,9 @@
-# IMY220-Assignment2
+# Manic
+IMY 320 Project
 
-While my code works, the provided registration code does not fully work.
-If registering a new account, edit the password field as desired, as the provided registration.php does not properly add a password.
+
+We decided to host on GitHub :
+https://chane-hall.github.io/Manic/
+
+Project Proposal :
+[Manic_DesignProposalV2.pdf](https://github.com/Chane-Hall/Manic/files/7328537/Manic_DesignProposalV2.pdf)

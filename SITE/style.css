@@ -1,0 +1,96 @@
+body {
+	margin :0px;
+	padding:0px;
+	color: #eeeeee;
+	overflow: hidden;
+  position: relative;
+}
+
+#menuB{
+	background-color: black;
+	transform: rotate(270deg);
+	color: white;
+	height: 50px;
+	width: 80px;
+	margin: 2%;
+	border: 0px;
+}
+.page{
+	position: absolute;
+	width : 100vw;
+	height: 100vh;
+}
+
+#background{
+	position: absolute;
+	z-index:-90;
+	top:0%;
+	left:0%;
+	width: 100%;
+}
+
+#menu{
+	left:0%;
+	top:0%;
+}
+#aboutB{
+	position: absolute;
+	z-index:-80;
+	top:50%;
+	left:30%;
+	width: 20%;
+	height: 25%;
+	background-color: rgba(0,0,0,0);
+	border: 0px;
+	color: rgba(0,0,0,0);
+}
+#merchB{
+	position: absolute;
+	z-index:-80;
+	top:65%;
+	left:68%;
+	width: 23%;
+	height: 25%;
+	background-color: rgba(0,0,0,0);
+	border: 0px;
+	color: rgba(0,0,0,0);
+}
+#projectsB{
+	position: absolute;
+	z-index:-80;
+	top:35%;
+	left: 55%;
+	width: 28%;
+	height: 20%;
+	background-color: rgba(0,0,0,0);
+	border: 0px;
+	color: rgba(0,0,0,0);
+}
+
+/*
+#4c5760
+#ffd046
+#eeeee
+*/
+
+.transition-goleft{
+	transition: 1s;
+	transform: translateX(0);
+}
+html.is-animating .transition-goleft{
+	transform: translateX(-100%);
+}
+html.is-leaving .transition-goleft{
+	transform: translateX(100%);
+}
+
+.transition-goright{
+	transition: 1s;
+	transform: translateX(0);
+}
+html.is-animating .transition-goright{
+	transform: translateX(100%);
+}
+html.is-leaving .transition-goright{
+	transform: translateX(-100%);
+}
