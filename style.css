@@ -80,9 +80,6 @@ body {
 html.is-animating .transition-goleft{
 	transform: translateX(-100%);
 }
-html.is-leaving .transition-goleft{
-	transform: translateX(100%);
-}
 
 .transition-goright{
 	transition: 1s;
@@ -90,7 +87,4 @@ html.is-leaving .transition-goleft{
 }
 html.is-animating .transition-goright{
 	transform: translateX(100%);
-}
-html.is-leaving .transition-goright{
-	transform: translateX(-100%);
 }
