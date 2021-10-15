@@ -84,7 +84,7 @@ main{
 
 .transition-goleft{
 	transition:1s;
-	transition-delay: 1s;
+	animation-timing-function: linear;
 	transform: translateX(0);
 }
 html.is-animating .transition-goleft{
@@ -92,25 +92,11 @@ html.is-animating .transition-goleft{
 }
 
 .transition-goright{
-	transition: 0.5s;
+	transition: 1s;
+	transition-delay: 1s;
+	animation-timing-function: linear;
 	transform: translateX(0);
 }
 html.is-animating .transition-goright{
 	transform: translateX(100%);
-}
-
-.transition-tLeft{
-	transition:0.5s;
-	transform:translateX(-100%)
-}
-html.is-animating .transition-tLeft{
-	transform:translateX(0)
-}
-
-.transition-tRight{
-	transition:0.5s;
-	transform:translateX(100%)
-}
-html.is-animating .transition-tRight{
-	transform:translateX(0)
 }
