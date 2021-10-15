@@ -23,11 +23,14 @@ body {
 }
 
 #background{
+	transition:1s;
+	transition-delay: 1s;
 	position: absolute;
 	z-index:-90;
 	top:0%;
 	left:0%;
 	width: 100%;
+	transform:translateX(0px);
 }
 #transit{
 	position: absolute;
@@ -74,30 +77,26 @@ body {
 	color: rgba(0,0,0,0);
 }
 main{
-	background-image: url("/Manic/images/BLANK.png");
 }
 /*
 #4c5760
 #ffd046
 #eeeee
 */
-
+html.to-menu #background{
+	transition-delay: 0s;
+	transform:translateX(-100%);
+}
+html.to-left #background{
+	transform:translateX(100%);
+}
 .transition-pan{
 	transition:1s;
 	transition-delay:.3s;
 	animation-timing-function: linear;
 	transform: translateX(0);
+	opacity:1;
 }
 html.is-animating .transition-pan{
-	transform: translateX(-100%);
-}
-
-.transition-goright{
-	transition: 1s;
-	transition-delay: 1s;
-	animation-timing-function: linear;
-	transform: translateX(0);
-}
-html.is-animating .transition-goright{
-	transform: translateX(100%);
+	opacity: 0;
 }
