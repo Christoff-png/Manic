@@ -24,7 +24,6 @@ body {
 
 #background{
 	transition:1s;
-	transition-delay: 1s;
 	position: absolute;
 	z-index:-90;
 	top:0%;
@@ -84,15 +83,13 @@ main{
 #eeeee
 */
 html.to-menu #background{
-	transition-delay: 0s;
 	transform:translateX(-100%);
 }
 html.to-left #background{
 	transform:translateX(100%);
 }
 .transition-pan{
-	transition:1s;
-	transition-delay:.3s;
+	transition:2s;
 	animation-timing-function: linear;
 	transform: translateX(0);
 	opacity:1;
