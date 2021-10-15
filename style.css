@@ -110,10 +110,9 @@ html.to-menu.is-animating #transits, html.to-menu.is-leaving #transits, html.to-
 
 
 .transition-pan{
-	transition:.2s;
-	transition-delay:0.8s;
+	transition:.1s;
 	transform: translateX(0);
-	
+
 }
 html.is-animating .transition-pan{
 	transform: translateX(0);
