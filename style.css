@@ -31,7 +31,7 @@ body {
 	width: 100%;
 	transform:translateX(0px);
 }
-#transit{
+#transit, #transits{
 	transition:1s;
 	position: absolute;
 	z-index:0;
@@ -39,6 +39,9 @@ body {
 	left:0%;
 	width: 100%;
 	transform:translateX(-100%);
+}
+#transits{
+	transform:translateX(100%);
 }
 #menu{
 	left:0%;
@@ -84,30 +87,19 @@ main{
 #ffd046
 #eeeee
 */
-html.to-menu.is-animating #background{
+html.to-menu.is-animating #background, html.to-left.is-leaving #background{
 	transform:translateX(100%);
 }
-html.to-menu.is-leaving #background{
+html.to-menu.is-leaving #background, html.to-left.is-animating #background{
 	transform:translateX(-100%);
-}
-html.to-left.is-animating #background{
-	transform:translateX(-100%);
-}
-html.to-left.is-leaving #background{
-	transform:translateX(100%);
 }
 
-html.to-menu.is-animating #transit{
+
+html.to-menu.is-animating #transit, html.to-menu.is-leaving #transit, html.to-left.is-animating #transit, html.to-left.is-leaving #transit{
 	transform:translateX(0%);
 }
-html.to-menu.is-leaving #transit{
+html.to-menu.is-animating #transits, html.to-menu.is-leaving #transits, html.to-left.is-animating #transits, html.to-left.is-leaving #transits{
 	transform:translateX(0%);
-}
-html.to-left.is-animating #transit{
-	transform:translateX(0);
-}
-html.to-left.is-leaving #transit{
-	transform:translateX(0);
 }
 
 
@@ -118,5 +110,5 @@ html.to-left.is-leaving #transit{
 	opacity:1;
 }
 html.is-animating .transition-pan{
-	opacity: 0;
+
 }
