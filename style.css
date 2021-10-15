@@ -4,6 +4,7 @@ body {
 	color: #eeeeee;
 	overflow: hidden;
   position: relative;
+	background-image: url("/Manic/images/BLANK.png");
 }
 
 #menuB{
@@ -30,7 +31,7 @@ body {
 }
 #transit{
 	position: absolute;
-	z-index:-50;
+	z-index:0;
 	top:0%;
 	left:0%;
 	width: 100%;
@@ -72,7 +73,9 @@ body {
 	border: 0px;
 	color: rgba(0,0,0,0);
 }
-
+main{
+	background-image: url("/Manic/images/BLANK.png");
+}
 /*
 #4c5760
 #ffd046
@@ -84,7 +87,7 @@ body {
 	transform: translateX(0);
 }
 html.is-animating .transition-goleft{
-	transform: translateX(-50%);
+	transform: translateX(-100%);
 }
 
 .transition-goright{
@@ -92,7 +95,7 @@ html.is-animating .transition-goleft{
 	transform: translateX(0);
 }
 html.is-animating .transition-goright{
-	transform: translateX(50%);
+	transform: translateX(100%);
 }
 
 .transition-tLeft{
