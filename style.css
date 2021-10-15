@@ -104,10 +104,11 @@ html.to-menu.is-animating #transits, html.to-menu.is-leaving #transits, html.to-
 
 
 .transition-pan{
-
+	transition:1s;
 	transform: translateX(0);
-
+	opacity:1;
 }
 html.is-animating .transition-pan{
-
+	transform: translateX(0);
+	opacity:0;
 }
