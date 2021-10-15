@@ -84,7 +84,7 @@ body {
 	transform: translateX(0);
 }
 html.is-animating .transition-goleft{
-	transform: translateX(-100%);
+	transform: translateX(-50%);
 }
 
 .transition-goright{
@@ -92,7 +92,7 @@ html.is-animating .transition-goleft{
 	transform: translateX(0);
 }
 html.is-animating .transition-goright{
-	transform: translateX(100%);
+	transform: translateX(50%);
 }
 
 .transition-tLeft{
@@ -105,7 +105,7 @@ html.is-animating .transition-tLeft{
 
 .transition-tRight{
 	transition:0.5s;
-	transform:translateX(50%)
+	transform:translateX(100%)
 }
 html.is-animating .transition-tRight{
 	transform:translateX(0)
