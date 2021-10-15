@@ -84,29 +84,29 @@ main{
 #ffd046
 #eeeee
 */
-html.to-menu html.is-animating #background{
+html.to-menu.is-animating #background{
 	transform:translateX(100%);
 }
-html.to-menu html.is-leaving #background{
+html.to-menu.is-leaving #background{
 	transform:translateX(-100%);
 }
-html.to-left html.is-animating #background{
+html.to-left.is-animating #background{
 	transform:translateX(-100%);
 }
-html.to-left html.is-leaving #background{
+html.to-left.is-leaving #background{
 	transform:translateX(100%);
 }
 
-html.to-menu html.is-animating #transit{
+html.to-menu.is-animating #transit{
 	transform:translateX(0%);
 }
-html.to-menu html.is-leaving #transit{
+html.to-menu.is-leaving #transit{
 	transform:translateX(0%);
 }
-html.to-left html.is-animating #transit{
+html.to-left.is-animating #transit{
 	transform:translateX(0);
 }
-html.to-left html.is-leaving #transit{
+html.to-left.is-leaving #transit{
 	transform:translateX(0);
 }
 
