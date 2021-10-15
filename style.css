@@ -82,10 +82,16 @@ main{
 #ffd046
 #eeeee
 */
-html.to-menu #background{
+html.to-menu html.is-animating #background{
+	transform:translateX(100%);
+}
+html.to-menu html.is-leaving #background{
 	transform:translateX(-100%);
 }
-html.to-left #background{
+html.to-left html.is-animating #background{
+	transform:translateX(-100%);
+}
+html.to-left html.is-leaving #background{
 	transform:translateX(100%);
 }
 .transition-pan{
