@@ -105,6 +105,8 @@ html.to-menu.is-animating #transits, html.to-menu.is-leaving #transits, html.to-
 
 .transition-pan{
 
+	transform: translateX(0);
+
 }
 html.is-animating .transition-pan{
 
