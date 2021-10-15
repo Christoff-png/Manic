@@ -105,7 +105,7 @@ html.is-animating .transition-tLeft{
 
 .transition-tRight{
 	transition:0.5s;
-	transform:translateX(0%)
+	transform:translateX(50%)
 }
 html.is-animating .transition-tRight{
 	transform:translateX(0)
