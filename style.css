@@ -28,7 +28,13 @@ body {
 	left:0%;
 	width: 100%;
 }
-
+#background{
+	position: absolute;
+	z-index:-50;
+	top:0%;
+	left:0%;
+	width: 100%;
+}
 #menu{
 	left:0%;
 	top:0%;
