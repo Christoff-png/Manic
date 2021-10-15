@@ -113,9 +113,9 @@ html.to-menu.is-animating #transits, html.to-menu.is-leaving #transits, html.to-
 	transition:.2s;
 	transition-delay:0.8s;
 	transform: translateX(0);
-	opacity:1;
+	
 }
 html.is-animating .transition-pan{
 	transform: translateX(0);
-	opacity:0;
+
 }
