@@ -1,3 +1,3 @@
 const swup = new Swup({
-  plugins: [new SwupPreloadPlugin()]
+  plugins: [new SwupPreloadPlugin(),new SwupSlideTheme()]
 });
