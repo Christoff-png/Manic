@@ -83,7 +83,8 @@ main{
 */
 
 .transition-goleft{
-	transition:0.5s;
+	transition:1s;
+	transition-delay: 1s;
 	transform: translateX(0);
 }
 html.is-animating .transition-goleft{
