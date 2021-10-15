@@ -87,10 +87,16 @@ main{
 #ffd046
 #eeeee
 */
-html.to-menu.is-animating #background, html.to-left.is-leaving #background{
+html.to-menu.is-animating #background{
 	transform:translateX(100%);
 }
-html.to-menu.is-leaving #background, html.to-left.is-animating #background{
+html.to-left.is-animating #background{
+	transform:translateX(-100%);
+}
+html.to-left.is-leaving #background{
+	transform:translateX(100%);
+}
+html.to-menu.is-leaving #background{
 	transform:translateX(-100%);
 }
 
