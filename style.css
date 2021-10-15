@@ -82,12 +82,13 @@ main{
 #eeeee
 */
 
-.transition-goleft{
+.transition-pan{
 	transition:1s;
+	transition-delay:.3s;
 	animation-timing-function: linear;
 	transform: translateX(0);
 }
-html.is-animating .transition-goleft{
+html.is-animating .transition-pan{
 	transform: translateX(-100%);
 }
 
