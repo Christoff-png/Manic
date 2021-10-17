@@ -31,6 +31,16 @@ body {
 	width: 100%;
 	transform:translateX(0px);
 }
+#video{
+	transition:1s;
+	transition-delay:1s;
+	position: absolute;
+	z-index:1;
+	top:0%;
+	left:0%;
+	width: 100%;
+	opacity: 0;
+}
 #transit, #transits{
 	transition:1s;
 	position: absolute;
@@ -87,34 +97,19 @@ main{
 #ffd046
 #eeeee
 */
-html.to-menu.is-animating #background{
-	transform:translateX(100%);
+html.is-animating #video{
+	opacity:1;
 }
-html.to-left.is-animating #background{
-	transform:translateX(-100%);
+html.is-leaving #video{
+	opacity:0;
 }
-html.to-left.is-leaving #background{
-	transform:translateX(100%);
-}
-html.to-menu.is-leaving #background{
-	transform:translateX(-100%);
-}
-
-
-html.to-menu.is-animating #transit, html.to-menu.is-leaving #transit, html.to-left.is-animating #transit, html.to-left.is-leaving #transit{
-	transform:translateX(0%);
-}
-html.to-menu.is-animating #transits, html.to-menu.is-leaving #transits, html.to-left.is-animating #transits, html.to-left.is-leaving #transits{
-	transform:translateX(0%);
-}
-
 
 .transition-pan{
-	transition:.1s;
-	transform: translateX(0);
-
+	transition: 0.1s;
+	transition-delay: 0.1s;
+	opacity:1;
 }
 html.is-animating .transition-pan{
-	transform: translateX(0);
+	opacity:0;
 
 }
