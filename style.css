@@ -31,28 +31,6 @@ body {
 	width: 100%;
 	transform:translateX(0px);
 }
-#video{
-	transition:1s;
-	transition-delay:1s;
-	position: absolute;
-	z-index:-81;
-	top:0%;
-	left:0%;
-	width: 100%;
-	opacity: 0;
-}
-#transit, #transits{
-	transition:1s;
-	position: absolute;
-	z-index:0;
-	top:0%;
-	left:0%;
-	width: 100%;
-	transform:translateX(-100%);
-}
-#transits{
-	transform:translateX(100%);
-}
 #menu{
 	left:0%;
 	top:0%;
@@ -105,11 +83,10 @@ html.is-leaving #video{
 }
 
 .transition-pan{
-	transition: 0.1s;
-	transition-delay: 0.1s;
+	transition: 1s;
+	transition-delay: 1s;
 	opacity:1;
 }
 html.is-animating .transition-pan{
 	opacity:0;
-
 }
