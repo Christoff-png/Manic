@@ -1,7 +1,6 @@
 body {
 	margin :0px;
 	padding:0px;
-	z-index:-99;
 	color: #eeeeee;
 	overflow: hidden;
   position: relative;
@@ -24,23 +23,18 @@ body {
 }
 
 #background{
-	transition:1s;
 	position: absolute;
 	z-index:-90;
 	top:0%;
 	left:0%;
 	width: 100%;
-	transform:translateX(0px);
 }
-video{
-	transition: .1s;
-	transition-delay: 2s;
+#transit{
 	position: absolute;
 	z-index:0;
 	top:0%;
 	left:0%;
 	width: 100%;
-	opacity: 0;
 }
 #menu{
 	left:0%;
@@ -64,9 +58,9 @@ video{
 	left:68%;
 	width: 23%;
 	height: 25%;
-	background-color: rgba(0,0,0,1);
+	background-color: rgba(0,0,0,0);
 	border: 0px;
-	color: rgba(0,0,0,1);
+	color: rgba(0,0,0,0);
 }
 #projectsB{
 	position: absolute;
@@ -80,7 +74,18 @@ video{
 	color: rgba(0,0,0,0);
 }
 main{
+	background-image: url("/Manic/images/BLANK.png");
 }
+video{
+	transition: .1s;
+	transition-delay: 2s;
+	position: absolute;
+	z-index:0;
+	top:0%;
+	left:0%;
+	width: 100%;
+	opacity: 0;
+
 /*
 #4c5760
 #ffd046
