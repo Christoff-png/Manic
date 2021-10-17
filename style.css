@@ -20,18 +20,12 @@ body {
 	position: absolute;
 	width : 100vw;
 	height: 100vh;
+	z-index:-99;
 }
 
 #background{
 	position: absolute;
 	z-index:-90;
-	top:0%;
-	left:0%;
-	width: 100%;
-}
-#transit{
-	position: absolute;
-	z-index:0;
 	top:0%;
 	left:0%;
 	width: 100%;
