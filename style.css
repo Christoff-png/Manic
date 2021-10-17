@@ -1,6 +1,7 @@
 body {
 	margin :0px;
 	padding:0px;
+	z-index:-99;
 	color: #eeeeee;
 	overflow: hidden;
   position: relative;
